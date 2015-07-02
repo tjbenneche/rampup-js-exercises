@@ -18,8 +18,6 @@ var _num;
 var _numbers = document.getElementsByTagName('span');
 // _passwordInput returns one element with id="password"
 var _passwordInput = document.getElementById('password');
-// _passwordInputValue is the value of the input field
-var _passwordInputValue = _passwordInput.value;
 // predefined password to compare
 var _password = "12345";
 // _checkBtn returns one element with id="check"
@@ -42,13 +40,13 @@ function checkPassword(){
 
 //write a function that clears the input value
 function clearPassword(){
-  _passwordInputValue = '';
+  _passwordInput.value = '';
 }
 
 //write a function that adds a number to the input box when a user clicks it
 function addNum(e){
   _num = this.innerHTML;
-  _passwordInputValue = _passwordInputValue + _num;
+  _passwordInput.value += _num;
 }
 
 //Click event listeners
