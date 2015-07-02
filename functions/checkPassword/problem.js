@@ -18,8 +18,6 @@ var _num;
 var _numbers = document.getElementsByTagName('span');
 // _passwordInput returns one element with id="password"
 var _passwordInput = document.getElementById('password');
-// _passwordInputValue is the value of the input field
-var _passwordInputValue = _passwordInput.value;
 // predefined password to compare
 var _password = "12345";
 // _checkBtn returns one element with id="check"
@@ -35,6 +33,9 @@ function checkPassword(){
     if password is a match, redirect page
     else, show an error alert and call clearPassword() function
   */
+
+  //CODE for password input value
+  //_passwordInput.value
 
   // CODE to redirect page
   // window.location.assign('http://stream1.gifsoup.com/view4/1181168/leo-strut-o.gif');
