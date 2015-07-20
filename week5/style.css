@@ -1,0 +1,43 @@
+body {
+	margin: 0;
+}
+.box {
+	border: 2px solid black;
+	width: calc(100%/3 - 4px);
+	float: left;
+  display:inline-block;
+	text-align: center;
+	cursor:pointer;
+}
+
+.box p{
+  padding:100px;
+}
+
+.circle{
+  border-radius:50%;
+}
+
+.selected{
+  border:2px solid blue;
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.spin{
+  -webkit-animation: spin 2s linear;
+  -moz-animation: spin 2s linear;
+  -o-animation: spin 2s linear;
+  animation: spin 2s linear;
+}
