@@ -34,6 +34,13 @@ function checkPassword(){
     else, show an error alert and call clearPassword() function
   */
 
+  if (_passwordInput.value == _password){
+    window.location.assign('http://stream1.gifsoup.com/view4/1181168/leo-strut-o.gif');
+  }
+  else{
+    alert('wrong! try again');
+  }
+
   //CODE for password input value
   //_passwordInput.value
 
@@ -45,17 +52,22 @@ function checkPassword(){
 function clearPassword(){
 
   // Set the value of password input field to an empty string
+  _passwordInput.value = '';
 
 }
 
 //write a function that adds a number to the input box when a user clicks it
-function addNum(e){
+function addNum(){
 
   /* set _num equal to the number on the button clicked
     then add that number to the password input field value
     hint: if you had a variable called _helloWorld that was just equal to
     "hello", how would you add "world" to update its value to "hello world"?
   */
+
+  _num = this.innerHTML;
+  _passwordInput.value += _num;
+
 
   // CODE for number on button clicked
   // this.innerHTML;
@@ -72,6 +84,11 @@ _clearBtn.addEventListener('click', clearPassword);
 
 // Add a click listener to each number button using a FOR LOOP to
 // iterate through the array
+
+
+for(var i=0; i < _numbers.length; i++){
+  _numbers[i].addEventListener('click', addNum);
+}
 
 // CODE to add click event listener
 // element.addEventListener('click', functionName)

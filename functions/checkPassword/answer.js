@@ -44,10 +44,11 @@ function clearPassword(){
 }
 
 //write a function that adds a number to the input box when a user clicks it
-function addNum(e){
+function addNum(){
   _num = this.innerHTML;
   _passwordInput.value += _num;
 }
+
 
 //Click event listeners
 

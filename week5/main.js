@@ -2,6 +2,7 @@
 // explain color click function simplicity
 // explain selected function
 
+var _boxes = $('.box');
 
 function makeCircle(){
   $('.selected').addClass('circle');
@@ -12,7 +13,7 @@ function makeSquare(){
 }
 
 function changeColor(color){
-  $('.selected').css('background-color', color);
+  $('.selected').addClass(color);
 }
 
 $('#circle').click(function(){
@@ -23,8 +24,9 @@ $('#square').click(function(){
   makeSquare();
 });
 
+
 $('.color').click(function(){
-  _color = $(this).attr('id');
+  _color = $(this).attr('data-color');
   changeColor(_color);
 });
 
@@ -37,15 +39,15 @@ $('.box').click(function(){
 });
 
 $('#select-all').click(function(){
-  $('.box').addClass('selected');
+  _boxes.addClass('selected');
 });
 
 $('#deselect').click(function(){
-  $('.box').removeClass('selected');
+  _boxes.removeClass('selected');
 });
 
 $('#reset').click(function(){
-  $('.box').removeClass('circle selected').css('background-color', 'white');
+  _boxes.removeClass('circle selected').css('background-color', 'white');
 });
 
 $('#spin').click(function(){

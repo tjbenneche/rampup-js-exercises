@@ -14,6 +14,26 @@ body {
   padding:100px;
 }
 
+.red{
+	background-color:red;
+}
+
+.blue{
+	background-color:blue;
+}
+
+.white{
+	background-color:white;
+}
+
+
+button{
+	font-size:40px;
+	padding:10px;
+	margin-top:2rem;
+	border-radius:995rem;
+}
+
 .circle{
   border-radius:50%;
 }
