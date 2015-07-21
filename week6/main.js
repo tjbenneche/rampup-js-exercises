@@ -20,7 +20,7 @@ $('#reset').click(function(){
 
 
 $('#closest').click(function(){
-  $('.selected').closest().addClass('selected');
+  $('.selected').closest('.two').addClass('selected');
 });
 
 $('#children').click(function(){
