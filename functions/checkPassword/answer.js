@@ -62,3 +62,12 @@ _clearBtn.addEventListener('click', clearPassword);
 for(var i=0 ; i<_numbers.length ; i++){
   _numbers[i].addEventListener('click', addNum);
 }
+
+
+
+$('#password').keydown(function(e){
+  if(e.keyCode == '13'){
+    console.log('13')
+    checkPassword();
+  }
+});

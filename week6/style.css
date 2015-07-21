@@ -14,6 +14,19 @@ p{
 
 .one{
   width:100%;
+  background-color:blue;
+}
+
+.two{
+  background-color:green;
+}
+
+.three{
+  background-color:red;
+}
+
+.four{
+  background-color:yellow;
 }
 
 section{
@@ -22,5 +35,5 @@ section{
 }
 
 div.selected{
-  border-color:blue;
+  background-color:black;
 }
