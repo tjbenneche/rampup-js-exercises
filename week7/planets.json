@@ -1,0 +1,16 @@
+{
+  "planets":{
+    "Mercury": {
+      "distance": 57910000,
+      "diameter": 4800
+    },
+    "Venus": {
+      "distance": 108200000,
+      "diameter": 12100
+    },
+    "Earth": {
+      "distance": 149600000,
+      "diameter": 12750
+    }
+  }
+}
