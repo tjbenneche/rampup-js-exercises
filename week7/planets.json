@@ -11,6 +11,30 @@
     "Earth": {
       "distance": 149600000,
       "diameter": 12750
+    },
+    "Mars": {
+      "distance": 227940000,
+      "diameter": 6800
+    },
+    "Jupiter": {
+      "distance": 778330000,
+      "diameter": 142800
+    },
+    "Saturn": {
+      "distance": 1424600000,
+      "diameter": 120660
+    },
+    "Uranus": {
+      "distance": 2873550000,
+      "diameter": 51800
+    },
+    "Neptune": {
+      "distance": 4501000000,
+      "diameter": 49500
+    },
+    "Pluto": {
+      "distance": 5945900000,
+      "diameter": 3300
     }
   }
 }
