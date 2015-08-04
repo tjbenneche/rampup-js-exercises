@@ -3,4 +3,39 @@
   height:50px;
   background-color:blue;
   margin-top:10px;
+  border-radius:50%;
+  background-size:cover;
+  background-position:center;
+}
+
+.sun{
+  
+}
+
+.pluto{
+  background-image:url('img/pluto.jpg');
+}
+.neptune{
+  background-image:url('img/neptune.png');
+}
+.jupiter{
+  background-image:url('img/jupiter.jpg');
+}
+.saturn{
+  background-image:url('img/saturn.jpg');
+}
+.mercury{
+  background-image:url('img/mercury.jpg');
+}
+.earth{
+  background-image:url('img/earth.jpg');
+}
+.mars{
+  background-image:url('img/mars.jpg');
+}
+.venus{
+  background-image:url('img/venus.jpg');
+}
+.uranus{
+  background-image:url('img/uranus.jpg');
 }
