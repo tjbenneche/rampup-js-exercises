@@ -34,7 +34,7 @@ function dataFromPlanets(data) {
 
 function printPlanets(){
   for (var i = 0; i < sortable.length; i++){
-    $('body').append('<div class="planet ' + sortable[i][0] + '" data-distance=' + sortable[i][1] +' data-size =' + sortable[i][2] + ' data-speed=' + sortable[i][3] + '>' + sortable[i][0] + '</div>');
+    $('body').append('<div class="planet-container"><div class="planet ' + sortable[i][0] + '" data-distance=' + sortable[i][1] +' data-size =' + sortable[i][2] + ' data-speed=' + sortable[i][3] + '></div></div>');
   }
   sizePlanets();
 }
@@ -54,21 +54,28 @@ $('#getPlanets').click(function(){
 
 function sizePlanets(){
   $.each($('.planet'), function(){
-    width = $(this).attr('data-size')/1000;
+    if ($(this).hasClass('sun')){
+      width = $(this).attr('data-size')/50000;
+    }
+    else{
+      width = $(this).attr('data-size')/500;
+    }
     $(this).css('width', width).css('height', width);
   })
+  spacePlanets();
 }
 
 function spacePlanets(){
-  $.each($('.planet'), function(){
-    width = $(this).attr('data-size')/1000;
+  $.each($('.planet-container'), function(){
+    width = $(this).find('.planet').attr('data-distance')/1000000;
     $(this).css('width', width).css('height', width);
-  })
+  });
+  rotatePlanets();
 }
 
 function rotatePlanets(){
-  $.each($('.planet'), function(){
-    speed = $(this).attr('data-speed')*2;
-    $(this).css('transform', '')
-  })
+  $.each($('.planet-container'), function(){
+    speed = $(this).find('.planet').attr('data-speed')*10 + 's';
+    $(this).css({'-webkit-animation':'spinner', '-webkit-animation-duration': speed, '-webkit-animation-iteration-count':'infinite', '-webkit-animation-timing-function': 'linear'});
+  });
 }
