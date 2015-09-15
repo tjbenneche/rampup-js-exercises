@@ -1,21 +1,32 @@
 // stop propagation
-
 function colorChildren(elem) {
   $(elem).children('div').addClass('selected');
 }
+$('#color-children').click(function(){
+  colorChildren($('.selected'));
+});
+
 
 function alertParents(elem) {
-  var arr = $(elem).parents();
+  var arr = $(elem).parents('div');
   var list = '';
   for (var i = 0; i < arr.length; i++){
     list += arr[i].className + ', ';
+    console.log(list);
   }
-  alert(list);
 }
+$('#alert-parents').click(function(){
+  alertParents($('.selected'));
+});
+
 
 function ancestorLevel(elem, num){
   $(elem).parents().eq(num).addClass('selected');
 }
+$('#ancestor-level').click(function(){
+  var num = prompt('How far up the chain? 0 is direct parent');
+  ancestorLevel($('.selected'), num);
+})
 
 $('div').click(function(e){
   e.stopPropagation();
@@ -44,13 +55,6 @@ $('#children').click(function(){
   $('.selected').children().addClass('selected')
 });
 
-$('#color-children').click(function(){
-  colorChildren($('.selected'));
-});
-
-$('#alert-parents').click(function(){
-  alertParents($('.selected'));
-});
 
 $('#siblings').click(function(){
   $('.selected').siblings('div').addClass('selected');
@@ -63,8 +67,3 @@ $('#next').click(function(){
 $('#prev').click(function(){
   $('.selected').prev('div').addClass('selected');
 });
-
-$('#ancestor-level').click(function(){
-  var num = prompt('How far up the chain? 0 is direct parent');
-  ancestorLevel($('.selected'), num);
-})

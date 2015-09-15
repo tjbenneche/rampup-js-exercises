@@ -1,6 +1,4 @@
 // store .box in variable to reduce dom queries
-// explain color click function simplicity
-// explain selected function
 
 var _boxes = $('.box');
 
@@ -9,6 +7,7 @@ function makeCircle(){
 }
 
 function makeSquare(){
+  console.log('make square fxn called');
   $('.selected').removeClass('circle');
 }
 
@@ -19,6 +18,7 @@ function changeColor(color){
 $('#circle').click(function(){
   makeCircle();
 });
+
 
 $('#square').click(function(){
   makeSquare();
@@ -34,9 +34,10 @@ $('#toggle').click(function(){
   $('.selected').slideToggle();
 });
 
-$('.box').click(function(){
+_boxes.click(function(){
   $(this).toggleClass('selected');
 });
+
 
 $('#select-all').click(function(){
   _boxes.addClass('selected');

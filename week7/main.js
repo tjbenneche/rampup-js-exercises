@@ -75,7 +75,7 @@ function spacePlanets(){
 
 function rotatePlanets(){
   $.each($('.planet-container'), function(){
-    speed = $(this).find('.planet').attr('data-speed')*10 + 's';
+    speed = 1/$(this).find('.planet').attr('data-speed')*10 + 's';
     $(this).css({'-webkit-animation':'spinner', '-webkit-animation-duration': speed, '-webkit-animation-iteration-count':'infinite', '-webkit-animation-timing-function': 'linear'});
   });
 }
