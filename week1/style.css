@@ -1,0 +1,37 @@
+span.incorrect {
+  color:red;
+}
+span.correct {
+  color:green;
+}
+
+
+code, p {
+  display:inline-block;
+}
+
+p {
+  color:blue;
+}
+
+span {
+  display:none;
+  font-size:2rem;
+  margin-left:1rem;
+}
+
+code {
+  min-width:500px;
+  background-color:#222;
+  line-height:25px;
+  padding-left:1rem;
+  color:pink;
+}
+
+.question.correct .correct {
+  display:inline-block;
+}
+
+.question.incorrect .incorrect {
+  display:inline-block;
+}
