@@ -3,47 +3,47 @@
     "Mercury": {
       "distance": 57910000,
       "diameter": 4800,
-      "velocity": 1.607
+      "revTime": 0.241
     },
     "Venus": {
       "distance": 108200000,
       "diameter": 12100,
-      "velocity": 1.174
+      "revTime": 0.615
     },
     "Earth": {
       "distance": 149600000,
       "diameter": 12750,
-      "velocity": 1
+      "revTime": 1
     },
     "Mars": {
       "distance": 227940000,
       "diameter": 6800,
-      "velocity": 0.802
+      "revTime": 1.88
     },
     "Jupiter": {
       "distance": 778330000,
       "diameter": 142800,
-      "velocity": 0.434
+      "revTime": 11.862
     },
     "Saturn": {
       "distance": 1424600000,
       "diameter": 120660,
-      "velocity": 0.323
+      "revTime": 29.456
     },
     "Uranus": {
       "distance": 2873550000,
       "diameter": 51800,
-      "velocity": 0.228
+      "revTime": 84.07
     },
     "Neptune": {
       "distance": 4501000000,
       "diameter": 49500,
-      "velocity": 0.182
+      "revTime": 164.81
     },
     "Pluto": {
       "distance": 5945900000,
       "diameter": 3300,
-      "velocity": 0.159
+      "revTime": 247.7
     }
   }
 }

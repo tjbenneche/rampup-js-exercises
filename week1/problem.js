@@ -1,43 +1,43 @@
 var dataTypes = [
   {
     question: "Hello world",
-    answer: "Data Type Here"
+    answer: "string"
   },
   {
     question: 12,
-    answer: "Data Type Here"
+    answer: "number"
   },
   {
     question: 12 + 5,
-    answer: "Data Type Here"
+    answer: "number"
   },
   {
     question: 12 + "5",
-    answer: "Data Type Here"
+    answer: "string"
   },
   {
     question: "hello" + " world",
-    answer: "Data Type Here"
+    answer: "string"
   },
   {
     question: false,
-    answer: "Data Type Here"
+    answer: "boolean"
   },
   {
     question: !true,
-    answer: "Data Type Here"
+    answer: "boolean"
   },
   {
     question: {name: "Tom"},
-    answer: "Data Type Here"
+    answer: "object"
   },
   {
     question: [4, 8, 15, 16, 23, 42],
-    answer: "Data Type Here"
+    answer: "array"
   },
   {
     question: ['hi', 12, [0,2], {greeting: "HI! I am a nested object"}],
-    answer: "Data Type Here"
+    answer: "array"
   }
 ]
 
@@ -87,27 +87,27 @@ var booleans = [
   },
   {
     question: true || 420 && 28 == '28',
-    answer: "Truthy or Falsey?"
+    answer: "truthy"
   },
   {
     question: true && !false && 0,
-    answer: "Truthy or Falsey?"
+    answer: "falsey"
   },
   {
     question: null || '28' === 28,
-    answer: "Truthy or Falsey?"
+    answer: "falsey"
   },
   {
     question: undefined && 1,
-    answer: "Truthy or Falsey?"
+    answer: "falsey"
   },
   {
     question: "hi i am a string",
-    answer: "Truthy or Falsey?"
+    answer: "truthy"
   },
   {
     question: "" || NaN,
-    answer: "Truthy or Falsey?"
+    answer: "falsey"
   },
 ]
 
